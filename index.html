@@ -1,34 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBA Counselling Services</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBA Counseling Services</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <img src="assets/images/logo.png" alt="MBA Counselling Logo" class="logo">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h1>Your Gateway to Top MBA Colleges</h1>
-            <p>Expert guidance to help you ace the MBA admission process.</p>
-            <a href="services.html" class="cta">Explore Services</a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 MBA Counselling Services. All Rights Reserved.</p>
-    </footer>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <div class="logo">MBA Counsel</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="cta">Book a Session</button>
+    </nav>
+    <div class="hero" id="home">
+      <div class="hero-content">
+        <h1>Transform Your MBA Dreams into Reality</h1>
+        <p>Expert guidance to secure your spot at top B-schools worldwide.</p>
+        <button class="cta">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="assets/images/service-1.jpg" alt="Service 1">
+        <h3>Application Strategy</h3>
+        <p>Personalized plans to align your goals with the top MBA programs.</p>
+      </div>
+      <div class="card">
+        <img src="assets/images/service-2.jpg" alt="Service 2">
+        <h3>Resume & SOP Review</h3>
+        <p>Craft impactful resumes and essays that stand out.</p>
+      </div>
+      <div class="card">
+        <img src="assets/images/service-3.jpg" alt="Service 3">
+        <h3>Mock Interviews</h3>
+        <p>Simulated interviews to prepare you for real-world scenarios.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="assets/images/testimonial-1.jpg" alt="Client 1">
+        <p>"Thanks to MBA Counsel, I got into my dream school with a full scholarship!"</p>
+        <h4>Riya Malhotra</h4>
+      </div>
+      <div class="testimonial">
+        <img src="assets/images/testimonial-2.jpg" alt="Client 2">
+        <p>"Their personalized guidance made all the difference in my application."</p>
+        <h4>Arjun Sharma</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions? Let’s connect!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MBA Counseling Services. All rights reserved.</p>
+  </footer>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

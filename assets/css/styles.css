@@ -1,41 +1,103 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
     line-height: 1.6;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
-}
-
-nav ul {
+  }
+  
+  /* Header */
+  header {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  }
+  
+  nav ul {
+    display: flex;
     list-style: none;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
     text-decoration: none;
-}
-
-.hero {
+  }
+  
+  .cta {
+    background: #ff6a3d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Services Section */
+  #services {
+    padding: 50px 20px;
+    background: #f9f9f9;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Testimonials Section */
+  #testimonials {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+  }
+  
+  .testimonials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .testimonial {
     text-align: center;
-    padding: 2em 0;
-    background: #f4f4f4;
-}
-
-.cta {
-    background: #333;
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-}
+    max-width: 300px;
+  }
+  
+  .testimonial img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
