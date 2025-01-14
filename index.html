@@ -3,87 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MBA Counseling Services</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>MBA Counselling Service</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header Section -->
   <header>
+    <div class="logo">
+      <h1>MBA Counselling</h1>
+      <p>Your Path to a Successful Career</p>
+    </div>
     <nav>
-      <div class="logo">MBA Counsel</div>
       <ul>
-        <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="cta">Book a Session</button>
     </nav>
-    <div class="hero" id="home">
-      <div class="hero-content">
-        <h1>Transform Your MBA Dreams into Reality</h1>
-        <p>Expert guidance to secure your spot at top B-schools worldwide.</p>
-        <button class="cta">Get Started</button>
-      </div>
-    </div>
   </header>
 
-  <!-- Services Section -->
-  <section id="services">
+  <section id="hero" class="hero">
+    <h2>Empower Your Future with Expert MBA Guidance</h2>
+    <p>Start your journey towards a brighter career today.</p>
+    <a href="#services" class="cta-btn">Get Started</a>
+  </section>
+
+  <section id="services" class="services">
     <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <img src="assets/images/service-1.jpg" alt="Service 1">
-        <h3>Application Strategy</h3>
-        <p>Personalized plans to align your goals with the top MBA programs.</p>
-      </div>
-      <div class="card">
-        <img src="assets/images/service-2.jpg" alt="Service 2">
-        <h3>Resume & SOP Review</h3>
-        <p>Craft impactful resumes and essays that stand out.</p>
-      </div>
-      <div class="card">
-        <img src="assets/images/service-3.jpg" alt="Service 3">
-        <h3>Mock Interviews</h3>
-        <p>Simulated interviews to prepare you for real-world scenarios.</p>
-      </div>
+    <div class="service">
+      <img src="service-1.jpg" alt="Career Counselling">
+      <h3>Career Counselling</h3>
+      <p>Get personalized advice from top experts to choose the right MBA path.</p>
+    </div>
+    <div class="service">
+      <img src="service-2.jpg" alt="Application Assistance">
+      <h3>Application Assistance</h3>
+      <p>We help you with your MBA application process, ensuring success.</p>
+    </div>
+    <div class="service">
+      <img src="service-3.jpg" alt="Interview Preparation">
+      <h3>Interview Preparation</h3>
+      <p>Prepare for your MBA interviews with mock sessions and expert tips.</p>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials">
+  <section id="testimonials" class="testimonials">
     <h2>What Our Clients Say</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <img src="assets/images/testimonial-1.jpg" alt="Client 1">
-        <p>"Thanks to MBA Counsel, I got into my dream school with a full scholarship!"</p>
-        <h4>Riya Malhotra</h4>
-      </div>
-      <div class="testimonial">
-        <img src="assets/images/testimonial-2.jpg" alt="Client 2">
-        <p>"Their personalized guidance made all the difference in my application."</p>
-        <h4>Arjun Sharma</h4>
-      </div>
+    <div class="testimonial">
+      <img src="testimonial-1.jpg" alt="Client 1">
+      <p>"This service changed my life. The guidance I received helped me get into my dream B-school!"</p>
+      <h4>- John Doe</h4>
+    </div>
+    <div class="testimonial">
+      <img src="testimonial-2.jpg" alt="Client 2">
+      <p>"I couldn’t have done it without their support. Highly recommend it to anyone looking to pursue an MBA."</p>
+      <h4>- Jane Smith</h4>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <p>Have questions? Let’s connect!</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="cta-btn">Send Message</button>
     </form>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 MBA Counseling Services. All rights reserved.</p>
+    <p>&copy; 2025 MBA Counselling Service. All Rights Reserved.</p>
   </footer>
-  <script src="assets/js/script.js"></script>
 </body>
 </html>

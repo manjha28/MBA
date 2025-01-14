@@ -1,103 +1,190 @@
 /* General Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Header */
-  header {
-    background: url('../images/hero.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .cta {
-    background: #ff6a3d;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  /* Services Section */
-  #services {
-    padding: 50px 20px;
-    background: #f9f9f9;
-  }
-  
-  .service-cards {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
-  .card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
-  }
-  
-  .card img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  /* Testimonials Section */
-  #testimonials {
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #4e54c8, #8f94fb);
-    color: white;
-  }
-  
-  .testimonials {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
-  .testimonial {
-    text-align: center;
-    max-width: 300px;
-  }
-  
-  .testimonial img {
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #004d99;
+  color: white;
+}
+
+header .logo h1 {
+  font-size: 2.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+header nav ul li a:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  background-color: #ff4500;
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.service {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+}
+
+.service img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.service h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+.service p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.testimonial h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact form {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #004d99;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.contact button:hover {
+  background-color: #003366;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004d99;
+  color: white;
+}
