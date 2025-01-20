@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f7f7f7;
   color: #333;
 }
@@ -19,6 +19,7 @@ h1, h2, h3, h4 {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
   background-color: #004d99;
   color: white;
@@ -42,6 +43,7 @@ header nav ul li a {
   text-decoration: none;
   font-size: 1.1rem;
   padding: 10px;
+  transition: background-color 0.3s;
 }
 
 header nav ul li a:hover {
@@ -51,7 +53,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background: url('hero.jpg') center/cover no-repeat;
+  background: url('https://via.placeholder.com/1920x600?text=Hero+Image') center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 100px 20px;
@@ -70,11 +72,12 @@ header nav ul li a:hover {
 .cta-btn {
   background-color: #ff6600;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border: none;
   font-size: 1.2rem;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .cta-btn:hover {
@@ -96,6 +99,15 @@ header nav ul li a:hover {
   display: inline-block;
   width: 30%;
   margin: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
 }
 
 .service img {
@@ -175,6 +187,7 @@ header nav ul li a:hover {
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
+  transition: background-color 0.3s;
 }
 
 .contact button:hover {
